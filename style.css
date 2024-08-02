@@ -299,6 +299,7 @@ a {
 .dot.active {
   background-color: #7c7c7c;
 }
+
 .footer-top {
   padding: 40px 194px;
 }
@@ -413,6 +414,10 @@ input[type="submit"] {
 }
 
 @media (max-width: 576px) {
+  header {
+    padding: 2px 13px;
+  }
+
   .navigation {
     display: none;
   }
@@ -455,6 +460,9 @@ input[type="submit"] {
     line-height: 140%;
     color: #fff;
     margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
 
   .hero-nums span {
@@ -470,6 +478,64 @@ input[type="submit"] {
     flex-direction: column;
     row-gap: 22px;
     margin-top: 22px;
+  }
+
+  .reviews {
+    padding: 60px 16px;
+  }
+
+  .review-slider {
+    margin-top: 10px;
+    width: 343px;
+  }
+
+  .review-card {
+    flex: 0 0 343px;
+    box-sizing: border-box;
+    padding: 34px 23px;
+    max-width: 343px;
+  }
+
+  .review-author {
+    text-align: left;
+  }
+
+  .footer-top {
+    padding: 60px 16px;
+  }
+
+  .footer-top-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .footer-left h2 {
+    width: 353px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  .footer-right {
+    column-gap: 7px;
+  }
+
+  .footer-bottom-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 8px;
   }
 }
 
