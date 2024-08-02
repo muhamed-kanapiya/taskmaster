@@ -113,3 +113,13 @@ document.addEventListener("DOMContentLoaded", function () {
   createDots();
   updateSlidePosition();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.getElementById("burgerMenu");
+  const navLinks = document.getElementById("navLinks");
+
+  burgerMenu.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+    burgerMenu.classList.toggle("open");
+  });
+});

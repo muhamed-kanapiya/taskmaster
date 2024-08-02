@@ -413,6 +413,27 @@ input[type="submit"] {
   color: #0b0e02;
 }
 
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
 @media (max-width: 576px) {
   header {
     padding: 2px 13px;
@@ -536,6 +557,38 @@ input[type="submit"] {
     flex-direction: column-reverse;
     align-items: flex-start;
     row-gap: 8px;
+  }
+
+  .footer-bottom {
+    padding: 16px;
+  }
+
+  .signup {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
   }
 }
 
