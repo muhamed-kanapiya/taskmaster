@@ -472,3 +472,7 @@ input[type="submit"] {
     margin-top: 22px;
   }
 }
+
+html {
+  outline: 1px solid red;
+}
