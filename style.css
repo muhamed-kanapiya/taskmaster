@@ -434,6 +434,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.nav-links {
+  display: none;
+}
+
 @media (max-width: 576px) {
   header {
     padding: 2px 13px;
