@@ -440,7 +440,7 @@ input[type="submit"] {
 
 @media (max-width: 576px) {
   header {
-    padding: 2px 13px;
+    padding: 13px;
   }
 
   .navigation {
